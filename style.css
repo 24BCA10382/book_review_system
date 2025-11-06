@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: #fff4fa;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #b34eb1;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #ffe8f3;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn, .btn-secondary {
+    display: inline-block;
+    background-color: #b34eb1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn:hover, .btn-secondary:hover {
+    background-color: #d670c4;
+}
+
+.btn-secondary {
+    background-color: #ff8ac4;
+}
+/* 🌸 Review Page Styles */
+.review-page .author {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.review-form input,
+.review-form textarea {
+    padding: 10px;
+    border: 2px solid #ffb6da;
+    border-radius: 10px;
+    background-color: #fff7fa;
+    font-size: 1em;
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-card {
+    background-color: #ffe3f1;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review-card h3 {
+    color: #b34eb1;
+    margin-bottom: 5px;
+}
+
+.review-card .stars {
+    color: gold;
+    margin-bottom: 8px;
+}
+
+.review-card .text {
+    color: #333;
+    font-size: 0.95em;
+}
+
+.review-card .date {
+    font-size: 0.8em;
+    color: #777;
+    text-align: right;
+}
+
+.no-reviews {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}
