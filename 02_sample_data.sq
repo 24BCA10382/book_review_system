@@ -1,0 +1,28 @@
+-- Sample books
+INSERT INTO books (title, author, review) VALUES
+('It Ends With Us', 'Colleen Hoover', 'A love story with emotional conflicts.'),
+('It Starts With Us', 'Colleen Hoover', 'Sequel exploring relationships.');
+
+-- Sample users
+INSERT INTO users (username, email, password) VALUES
+('Alice', 'alice@example.com', 'password123'),
+('Bob', 'bob@example.com', 'password123'),
+('Charlie', 'charlie@example.com', 'password123');
+
+-- Sample reviews
+INSERT INTO reviews (book_id, reviewer_name, rating, comment) VALUES
+(1, 'Alice', 5, 'Loved it! So emotional.'),
+(1, 'Bob', 4, 'Great read, a bit slow in the middle.'),
+(2, 'Charlie', 5, 'Even better than the first book!');
+
+-- Sample ratings
+INSERT INTO ratings (book_id, user_id, rating) VALUES
+(1, 1, 5),
+(1, 2, 4),
+(2, 3, 5);
+
+-- Sample comments
+INSERT INTO comments (book_id, user_id, comment) VALUES
+(1, 1, 'Highly recommend this book!'),
+(1, 2, 'Interesting plot, loved the characters.'),
+(2, 3, 'Perfect sequel!');
